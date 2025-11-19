@@ -12,7 +12,8 @@
       }
 
       network_interface {
-        network = google_compute_network.custom_vpc_network
+        network = google_compute_network.custom_vpc_network.name
+        subnetwork = google_compute_subnetwork.subnet_us_central1.name
         access_config {
             // Ephemeral public IP
         }
