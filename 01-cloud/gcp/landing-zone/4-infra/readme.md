@@ -1,1 +1,15 @@
 Infra as Code, manage resource via Terraform or ...
+- IAM and service account: WIF, Quota
+- Network: VPC, subnet, route, IP address, firewall, SSL certificates
+- Cloud storage, bucket
+- Security: Binary authorization, KMS
+- Cloud monitoring/logging: metric, alert, trace, uptime check
+- Artifact registry: docker image, generic repo
+- Big query
+- Billing account, budget alerting
+- Compute engine: disk, snapshot, schedule
+- Kubenetes engine: workload, service, configmap & secret
+- CDN
+- Databases: Cloud SQL
+- API Gateway
+- Backup & Recovery: DR, Backup for GKE
