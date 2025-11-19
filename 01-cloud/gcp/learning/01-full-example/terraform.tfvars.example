@@ -1,0 +1,6 @@
+    project_id = "user-aruysvqzjebn"
+    region = "asia-southeast1" # Uncomment and modify if needed
+    zone = "asia-southeast1-b" # Uncomment and modify if needed
+    vm_name = "my-terraform-vm" # Uncomment and modify if needed
+    machine_type = "e2-medium" # Uncomment and modify if needed
+    boot_image = "debian-cloud/debian-12" # Uncomment and modify if needed
