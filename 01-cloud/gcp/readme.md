@@ -1,14 +1,5 @@
 gcloud services enable compute
 gcloud services enable cloudresourcemanager.googleapis.com
-
-PROJECT_ID=user-khyaafthvlrn
-gcloud projects add-iam-policy-binding $PROJECT_ID \
-  --member="user:ethan.bui@tribv.cloud" \
-    --role="roles/editor"
-
-PROJECT_ID=user-khyaafthvlrn
-gcloud config set project $PROJECT_ID --quiet
-
 gcloud services enable container
 
 gcloud services enable storage-api.googleapis.com
@@ -20,6 +11,16 @@ gcloud services enable logging
 gcloud services enable containerscanning.googleapis.com
 gcloud services enable dns.googleapis.com
 gcloud services enable iam.googleapis.com
+
+PROJECT_ID=user-boxylkxbbveb
+gcloud projects add-iam-policy-binding $PROJECT_ID \
+  --member="user:ethan.bui@tribv.cloud" \
+    --role="roles/editor"
+
+PROJECT_ID=user-boxylkxbbveb
+gcloud config set project $PROJECT_ID --quiet
+
+
 
 gcloud services enable cloudfunctions.googleapis.com
 gcloud services enable cloudbuild.googleapis.com
