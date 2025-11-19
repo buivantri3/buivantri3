@@ -16,3 +16,4 @@ Here are some ideas to get you started:
 -->
 
 [] Connect together for all.
+[] Connect from anywhere
