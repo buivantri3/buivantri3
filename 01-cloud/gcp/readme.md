@@ -1,13 +1,13 @@
 gcloud services enable compute
 gcloud services enable cloudresourcemanager.googleapis.com
 
-PROJECT_ID=user-aruysvqzjebn
+PROJECT_ID=user-khyaafthvlrn
 gcloud projects add-iam-policy-binding $PROJECT_ID \
   --member="user:ethan.bui@tribv.cloud" \
     --role="roles/editor"
 
-PROJECT_ID=user-aruysvqzjebn
-gcloud config set project $PROJECT_ID
+PROJECT_ID=user-khyaafthvlrn
+gcloud config set project $PROJECT_ID --quiet
 
 gcloud services enable container
 
@@ -31,3 +31,5 @@ gcloud services enable domains.googleapis.com
 
 terraform state list
 terraform state rm google_container_cluster.autopilot_cluster
+terraform force-unlock --force LOCK_ID
+terraform force-unlock --force 5d8b421c-3596-61dd-fdd1-165dfb867b59
