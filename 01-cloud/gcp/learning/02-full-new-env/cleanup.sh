@@ -1,6 +1,6 @@
 #/bin/bash
 
-PROJECT_ID=user-boxylkxbbveb
+PROJECT_ID=user-xxwgmjefvbnd
 REGION=us-central1
 
 gcloud config set project $PROJECT_ID --quiet
